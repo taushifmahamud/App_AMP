@@ -1,0 +1,146 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.text-left{
+    text-align: left;
+}
+.text-center{
+    text-align: center;
+}
+.text-right{
+    text-align: right;
+}
+.clear::after{
+    content: "";
+    clear: both;
+    display: block;
+}
+.left{
+    float: left;
+}
+.right{
+    float: right;
+}
+img{
+    max-width: 100%;
+}
+.mid-content{
+    max-width: 1300px;
+    margin: auto;
+}
+/* lets go */
+body,h1,h2,h3,h4,h5,h6,p,a,span{
+    font-family: 'Work Sans', sans-serif;
+}
+.header-section{
+    background-color: #fff;
+    border-bottom: rgb(142, 141, 141);
+    padding: 7px 0;
+}
+.header-section a{
+    color: #010101;
+}
+.header-logo{
+    width: 30%;
+}
+.logo span{
+    display: inline-block;
+    margin-top: 14px;
+    font-size: 27px;
+    font-weight: 500;
+}
+.logo img{
+    height: 60px;
+    float: left;
+    margin-right: 10px;
+}
+.header-menu{
+    width: 56%;
+}
+.header-button{
+    width: 14%;
+    text-align: right;
+}
+.primary-menu{
+
+}
+.primary-menu ul{}
+.primary-menu ul li{
+    display: inline-block;
+}
+.primary-menu ul li a{
+    display: block;
+    padding: 0 20px;
+    font-size: 17px;
+    line-height: 60px;
+    text-decoration: none;
+}
+.primary-menu ul li a:hover{}
+.header-btn{
+    border: 2px solid #627ee5;
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 7px;
+    border-radius: 10px;
+    color: #627ee5;
+    text-decoration: none;
+    font-size: 18px;
+
+}
+/* Dropdown Menu */
+.primary-menu ul li{
+    
+    position: relative;
+}
+.primary-menu ul li ul{
+    
+    position: absolute;
+    left: 0%;
+    top: 100%;
+    width: 300px;
+    background: #fff;
+    opacity: 0;
+    visibility: hidden;
+    transition: .7s;
+    transform: scaleY(0);
+    transform-origin: top center;
+    margin-left: 5px;
+}
+.primary-menu ul li ul li{
+    display: block !important;
+}
+.primary-menu ul li:hover ul{
+    opacity: 1;
+    visibility: visible;
+    transform: scaleY(1);
+}
+/* banner */
+.banner{
+    background: url(../images/banner.jpg) no-repeat center center; 
+    background-size: cover;
+    padding: 200px 0;
+    color: #fff; 
+
+}
+.banner-content{}
+.banner-content h3{
+    font-size: 20px;
+    font-weight: 400;
+}
+.banner-content h2{
+    font-size: 60px;
+    margin: 30px 0;
+}
+.defult-btn{
+    color: #636363;
+    padding: 20px 30px;
+    background: #fff;
+    display: inline-block;
+    font-size: 20px;
+    font-weight: 600;
+    margin-left: 5px;
+    margin-right: 5px;
+    border-radius: 10px;
+    text-decoration: none;
+}
